@@ -1,4 +1,9 @@
 {
+    "tasks": {
+        "run:base": "deno run --allow-net=irc-ws.chat.twitch.tv --allow-run=/usr/bin/pw-play,/usr/bin/kdialog",
+        "run": "deno task run:base --allow-read main.ts",
+        "dev": "deno task run:base --allow-read --watch main.ts"
+    },
 	"fmt": {
 		"semiColons": false,
 		"lineWidth": 100,
